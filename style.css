@@ -1,0 +1,58 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+nav {
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f1f1f1;
+    width: 67%;
+    margin: auto;
+    padding: 0.8em 0;
+}
+
+img {
+    width: 100%;
+    clear: right;
+    display: block;
+    margin-bottom: calc(15%/6);
+
+}
+
+
+.container {
+    column-count: 3;
+    margin: calc(10%/6);
+    column-gap: calc(5%/6);
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        column-count: 3;
+    }
+    nav {
+        font-size: 1.5em;
+        width: 67%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        column-count: 2;
+    }
+    nav {
+        font-size: 25px;
+        width:75%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        column-count: 1;
+    }
+    nav {
+        font-size: 18px;
+        width: 85%;
+    }
+}
